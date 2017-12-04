@@ -58,5 +58,9 @@ public class Main {
         //4
         //függvény hívás
         CalculatorService.randomNumber();
+
+        //5
+        //függvény hívás
+        CalculatorService.randomNumbers();
     }
 }

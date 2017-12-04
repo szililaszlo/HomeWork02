@@ -54,4 +54,25 @@ public class CalculatorService {
        System.out.println(number);
     }
 
+    //5
+    public static void randomNumbers() {
+        //véletlenszám generálás a képlet: (max-min+1) + (min)
+        //double használata a nem egész számokért
+        double number1 = Math.random() * 51 + 100;
+        System.out.println("Az első szám: " + number1);
+        double number2 = Math.random() * 51 + 100;
+        System.out.println("A második szám: " + number2);
+        //feltételes kiíratás
+        //
+        if( ((number1 > number2) && (number1%2==0)) || number1<number2  && number1%2!=0) {
+            System.out.println(number1);
+        }
+        else if ((number2 > number1) && (number2%2!=0)) {
+            System.out.println(number2);
+        }
+        else {
+            System.out.println(Math.pow(number1,number2));
+        }
+    }
+
 }
