@@ -54,5 +54,9 @@ public class Main {
         //a függvény meghívása a bekért adatokkal
         System.out.println(CalculationHelper.calculate(task3Number1,task3Number2,task3Operation));
         System.out.println("-------------------------------");
+
+        //4
+        //függvény hívás
+        CalculatorService.randomNumber();
     }
 }

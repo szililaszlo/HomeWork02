@@ -2,6 +2,7 @@ package com.company.homework02;
 
 public class CalculatorService {
 
+    //1
     // publikus és statikus metódus lértehozása, hogy a Main függvényből meghívható legyen
     public static boolean isItEven(int number) {
         // if feltételes elágazás ami kiértékeli, ohgy a szám párpos-e
@@ -12,6 +13,7 @@ public class CalculatorService {
         }
     }
 
+    //2
     // publikus és statikus metódus lértehozása, hogy a Main függvényből meghívható legyen
     public static int calculate(int num1, int num2, char operation) {
         //eredmény tárolására szolgáló változó
@@ -33,6 +35,23 @@ public class CalculatorService {
         }
         //visszatérési érték
         return result;
+    }
+
+    //4
+    public static void randomNumber() {
+        //véletlenszám generálás a képlet: (max-min+1) + (min)
+        //double használata a nem egész számokért
+       double number = Math.random() * 26 + 25;
+       //feltételes kiíratás
+        //ha a számhoz lefelé kerekített legközelebbi értékére kerekítve az megegyezik az generáltal akkor a szám egész
+       if(number == Math.floor(number)) {
+           System.out.println("A szám egész");
+       }
+       else {
+           System.out.println("A szám nem egész");
+       }
+       // kiíratás
+       System.out.println(number);
     }
 
 }

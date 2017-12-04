@@ -1,6 +1,7 @@
 package com.company.homework02;
 
 public class CalculationHelper {
+    //3
     // publikus és statikus metódus lértehozása, hogy a Main függvényből meghívható legyen
     public static int calculate(int num1, int num2, char operation) {
         //eredmény tárolására szolgáló változó
